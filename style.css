@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Scope+One|Shrikhand');
+header{
+
+	background-image:url("veterinario.png");
+	background-size:cover;
+
+}
 
 body, html {
   background-size: cover;
