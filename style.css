@@ -1,9 +1,19 @@
-.material-symbols-outlined {
+body {
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+
+
+body{
+font-family: "Tilt Prism", sans-serif;  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
 }
 
 
