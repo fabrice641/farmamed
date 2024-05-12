@@ -1,3 +1,10 @@
+
+body{
+  font-family: "Arbutus", serif;  font-weight: 400;
+  font-style: normal;
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Scope+One|Shrikhand');
 
 body, html {
