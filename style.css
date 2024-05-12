@@ -9,7 +9,7 @@ body {
 
 body{
 font-family: "Tilt Prism", sans-serif;  font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: auto;
   font-style: normal;
   font-variation-settings:
     "XROT" 0,
@@ -18,10 +18,11 @@ font-family: "Tilt Prism", sans-serif;  font-optical-sizing: auto;
 
 
 @import url('https://fonts.googleapis.com/css?family=Scope+One|Shrikhand');
-header{
+body{
 
 	background-image:url("veterinario.png");
-	background-size:1000px;
+	background-repeat:no-repeat;
+	
 
 }
 
