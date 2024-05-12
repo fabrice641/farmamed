@@ -30,7 +30,7 @@ body, html {
   background-size: cover;
   background-color: rebeccapurple; 
   color: #fff;
-  display: grid;
+  display: column;
   font-family: 'Scope One', serif;
   font-size: 22px;
   height: 100%;
