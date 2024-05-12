@@ -41,6 +41,13 @@ div {
   
 }
 
+body{
+
+	background-image:url('veterinario.png');
+	background-repeat:no-repeat;
+
+}
+
 @charset "UTF-8";
 /*! bulma.io v1.0.0 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
