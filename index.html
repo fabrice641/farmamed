@@ -208,9 +208,28 @@ Per ulteriori informazioni sui trattamenti disponibili e per prenotare una consu
 <img src="contatti.png">
         
 
-<script type="text/javascript">
-
-$(document).ready(function () {
+        
+    <style>
+        body {
+            text-align: center;
+        }
+ 
+        .contactform-buttons {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+ 
+    <script>
+        $(document).ready(function () {
             $('#submit').click(function (e) {
                 e.preventDefault();
                 const name = $('#name').val();
@@ -245,9 +264,41 @@ $(document).ready(function () {
                 return true;
             }
         }
-
-
-</script>
+    </script>
+ 
+    <center>
+ 
+        <form action="" method="post" id="contactform">
+ 
+            <label for="name">Name:</label>
+            <input name="name"
+                   id="name"
+                   type="text"
+                   placeholder="Please enter your name"
+                   class="contact-input">
+            <br/><br/>
+            <label for="email">Email :</label>
+            <input name="email"
+                   id="email"
+                   type="text"
+                   placeholder="Please enter your email"
+                   class="contact-input">
+ 
+            <p class="error"
+                  id="invalid_email">
+            </p>
+ 
+            <br />
+            <input type="submit"
+                   class="contactform-buttons"
+                   id="submit"
+                   value="Check email validity" />
+        </form>
+ 
+        <div id="correct"
+             style="color:gray;">
+        </div>
+    </center>
 
         
     </footer>
