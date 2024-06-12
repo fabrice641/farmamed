@@ -56,46 +56,55 @@
         <img src="medicina-estetica-bari.png" class="img-fluid w-100 border-0" alt="banner">
     </header>
 
-    <!-- Carousel Section -->
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <h2>SERVIZI
-                    <div class="changebox">
-                        <span>DI MEDICINA</span><br>
-                        <span>ESTETICA</span><br>
-                        <span>DI ALTA </span><br>
-                        <span>QUALITÀ</span><br>
-                    </div>
-                    PER TE!
-                </h2>
-                <img src="medicina-estetica.png" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="medicina-estetica-2.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="medicina-estetica-3.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="medicina-estetica-4.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="medicina-estetica-bari-5.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="medicina-estetica-medicina-estetica.png" class="d-block w-100 h-100" alt="...">
-            </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <h2>SERVIZI
+                <div class="changebox">
+                    <span>DI MEDICINA</span><br>
+                    <span>ESTETICA</span><br>
+                    <span>DI ALTA </span><br>
+                    <span>QUALITÀ</span><br>
+                </div>
+                PER TE!
+            </h2>
+            <img src="medicina-estetica.png" class="d-block w-100 h-100" alt="...">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+            <img src="medicina-estetica-2.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="medicina-estetica-3.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="medicina-estetica-4.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="medicina-estetica-bari-5.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="medicina-estetica-medicina-estetica.png" class="d-block w-100 h-100" alt="...">
+        </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // Attiva l'autoplay del carousel
+        $('.carousel').carousel({
+            interval: 2000, // Tempo in millisecondi tra le slide
+            wrap: true // Per far sì che il carousel continui a loopare
+        });
+    });
+</script>
 
     <!-- Content Section -->
     <section class="container-fluid bg-light p-3">
