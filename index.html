@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="medicina-estetica.png" type="image/png">
 </head>
 
-<body class="container-fluid bg-white w-100 text-dark">
+<body class="container-fluid bg-white w-100 h-100 text-dark">
 
     <h1 class="display-1 text-center">FARMAMED</h1>
 
@@ -31,6 +31,183 @@
 
     <!-- Header -->
     <header class="header_section text-dark py-3 text-center" data-role="header">
+
+        <!-------------------------------------------------->
+<!-- Author: Ilia Kotkov                          -->
+<!-- https://twitter.com/aurum447                 -->
+<!-- https://t.me/Aurum447                        -->
+<!-- https://github.com/aurum447                  -->
+<!-- https://www.linkedin.com/in/iliakotkovmne447 -->
+<!-------------------------------------------------->
+
+<template>
+  <div id="main_container" @wheel="handleWheel">
+    <svg id="svg_filters_container" width="100%" height="100%">
+      <filter id="turbulence1" x="0" y="0" width="100%" height="100%">
+        <feTurbulence
+          id="turbulence-filter1"
+          :baseFrequency="`0 ${0.68 + header_filter_value / 1000}`"
+          numOctaves="1"
+          seed="0"
+          stitchTiles="noStitch"
+        />
+        <feDisplacementMap
+          in="SourceGraphic"
+          :scale="`${150 - header_filter_value / 4}`"
+        />
+      </filter>
+    </svg>
+
+    <div id="header_wrapper">
+      <div
+        id="header_filter_part"
+        :style="`opacity: ${header_filter_value / 100}`"
+      ></div>
+
+      <div
+        id="header_border_part"
+        :style="`background: 
+                    linear-gradient(93deg,
+                        rgba(128, 0, 32, ${header_filter_value / 200}) 0%,
+                        transparent 95%
+                    );
+                    mask: linear-gradient(138deg,
+                        white ${header_border_value}%,
+                        transparent ${header_border_value + 10}%
+                    );
+                ;`"
+      ></div>
+
+      <div
+        id="header_content_part"
+        :style="`opacity: ${header_logo_value / 100}`"
+      >
+        <div id="logo">
+          <svg id="svg_logo">
+            <line
+              x1="5%"
+              y1="25%"
+              x2="7.5%"
+              y2="35%"
+              stroke="var(--destiny-neonblue)"
+              stroke-width="2px"
+            />
+            <line
+              x1="17.5%"
+              y1="75%"
+              x2="20%"
+              y2="85%"
+              stroke="var(--destiny-neonblue)"
+              stroke-width="2px"
+            />
+
+            <line
+              x1="20%"
+              y1="85%"
+              x2="26.25%"
+              y2="80%"
+              stroke="var(--destiny-neonblue)"
+              stroke-width="2px"
+            />
+            <line
+              x1="75%"
+              y1="41%"
+              x2="95%"
+              y2="25%"
+              stroke="var(--destiny-neonblue)"
+              stroke-width="2px"
+            />
+
+            <line
+              x1="5%"
+              y1="25%"
+              x2="15%"
+              y2="25%"
+              stroke="var(--destiny-neonblue)"
+              stroke-width="2px"
+            />
+            <line
+              x1="75%"
+              y1="25%"
+              x2="95%"
+              y2="25%"
+              stroke="var(--destiny-neonblue)"
+              stroke-width="2px"
+            />
+
+            <line
+              x1="3.75%"
+              y1="40%"
+              x2="60%"
+              y2="40%"
+              stroke="var(--destiny-neonblue)"
+              stroke-width="2px"
+            />
+            <line
+              x1="3.75%"
+              y1="40%"
+              x2="12.5%"
+              y2="75%"
+              stroke="var(--destiny-neonblue)"
+              stroke-width="2px"
+            />
+            <line
+              x1="12.5%"
+              y1="75%"
+              x2="60%"
+              y2="40%"
+              stroke="var(--destiny-neonblue)"
+              stroke-width="2px"
+            />
+
+            <line
+              x1="70%"
+              y1="40%"
+              x2="78.75%"
+              y2="75%"
+              stroke="var(--destiny-neonblue)"
+              stroke-width="2px"
+            />
+            <line
+              x1="70%"
+              y1="40%"
+              x2="22.5%"
+              y2="75%"
+              stroke="var(--destiny-neonblue)"
+              stroke-width="2px"
+            />
+            <line
+              x1="22.5%"
+              y1="75%"
+              x2="78.75%"
+              y2="75%"
+              stroke="var(--destiny-neonblue)"
+              stroke-width="2px"
+            />
+          </svg>
+          <span id="span_logo">ECHELON</span>
+        </div>
+
+        <div id="buttons">
+          <div class="header_button">
+            <span id="top_symbol" class="material-symbols-outlined">star</span>
+          </div>
+          <div class="header_button">
+            <span id="experiment_symbol" class="material-symbols-outlined">
+              experiment
+            </span>
+          </div>
+          <div class="header_button">
+            <span id="new_symbol" class="material-symbols-outlined">bolt</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+        
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="#"><img src="medicina-estetica.png"></a>
@@ -202,6 +379,58 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+        <script setup>
+import { onMounted, ref } from "vue";
+import Vue from "https://esm.sh/vue";
+import animejs from "https://esm.sh/animejs";
+
+const header_filter_value = ref(0);
+const header_border_value = ref(0);
+const header_logo_value = ref(0);
+
+const header_animations = () => {
+  anime({
+    targets: header_filter_value,
+    value: [0, 100],
+    duration: 1000,
+    delay: 250,
+    easing: "easeInOutExpo",
+    update: () => {
+      header_filter_value.value = header_filter_value.value;
+    }
+  });
+  anime({
+    targets: header_border_value,
+    value: [-10, 100],
+    duration: 1000,
+    easing: "easeInOutExpo",
+    update: () => {
+      header_border_value.value = header_border_value.value;
+    }
+  });
+  anime({
+    targets: header_logo_value,
+    value: [0, 100],
+    duration: 1000,
+    delay: 750,
+    easing: "easeInOutExpo",
+    update: () => {
+      header_logo_value.value = header_logo_value.value;
+    }
+  });
+  anime({
+    targets: ".header_button",
+    opacity: [0, 1],
+    duration: 500,
+    delay: anime.stagger(250, { start: 1500 }),
+    easing: "easeInOutExpo"
+  });
+};
+
+onMounted(() => {
+  header_animations();
+});
+</script>
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
