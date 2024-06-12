@@ -127,15 +127,21 @@ section {
 
 
 #hiking {
-  background-image: url('https://images.unsplash.com/photo-1535515384173-d74166f26820?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTcyNjU5ODh8&ixlib=rb-4.0.3&q=85&w=1920'); /* photo by David Gavi for Unsplash */
+
+  background-image:url('medicina-estetica.png');
+
 }
 
 #camping {
-  background-image: url('https://images.unsplash.com/photo-1565674484371-a90094649d30?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTcyNjYwODJ8&ixlib=rb-4.0.3&q=85&w=1920'); /* Photo by Valery Sysoev for Unsplash */
+
+  background-image:url('medicina-estetica.jpg');
+
 }
 
 #stargazing {
-  background-image: url('https://images.unsplash.com/photo-1516257273908-f54242bd5ade?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTcyNjU1OTh8&ixlib=rb-4.0.3&q=85&w=1920'); /* Photo by Chris Leggat for Unsplash */
+
+  background-image:url('favicon.png');
+
 }
 
 @keyframes showText {
