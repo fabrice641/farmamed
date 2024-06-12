@@ -1,24 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
-body{
-   margin:0;
-   padding:0;
-   background: #E8EAF6;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   min-height: 100vh;
-   font-family: Raleway, sans-serif;
-   font-size: 32px;
-   font-weight: bold;
-   text-transform: uppercase;
-}
-.changebox{
-   margin: 0 5px;
-   color: #FF5722;
-   overflow: hidden;
-   transition: .5s;
-   white-space: nowrap;
-}
+
 
 
 
@@ -27,7 +7,7 @@ body {
   .dashboard {
   position: absolute;
   inset: 0;
-  display: grid;
+  display: column;
   place-items: center;
   perspective: 100px;
   transform: rotateY(0deg);
