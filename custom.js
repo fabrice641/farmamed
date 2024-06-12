@@ -1,3 +1,35 @@
+// spanタグに分割
+let splitTarget = document.querySelectorAll('.js-splitText');//ターゲットとなる要素を全取得
+splitTarget.forEach((target) =>{
+  //target = ターゲット
+  
+    newText = '';//生成する要素を格納するための変数
+    spanText = target.innerHTML;//ターゲットの中身を取得
+    spanText.split('').forEach((char) =>{
+      //char = character 文字
+      newText += '<span>' + char + '</span>';//一文字ずつspanタグで囲む
+    });
+    target.innerHTML = newText;//ターゲットに生成した要素を挿入
+});
+
+
+let targets = document.querySelectorAll('.js-text-effect');
+
+
+targets.forEach((target)=>{
+  let spans = target.querySelectorAll('span');
+  gsap.to(spans,{rotateY:'0',duration:.5,stagger:.05,autoAlpha:1,scrollTrigger:{
+    trigger:spans,
+    start:'top bottom',
+  }})
+})
+
+
+
+
+
+
+
 let nextButton = document.getElementById('next')
 let prevButton = document.getElementById('prev')
 let list = [].slice.call(document.querySelector('.container').children)
