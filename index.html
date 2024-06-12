@@ -209,6 +209,27 @@ In conclusione, la cavitazione rappresenta una soluzione promettente per coloro 
         </div>
     </section>
 
+    <script>
+
+        function validazioneEmail(email) 
+{
+    // recupero il valore della email indicata nel form
+    var email=document.forms['contact-form'].email.value;
+    // se non ho inserito nulla nel campo
+    if(email==''){alert("Devi indicare un indirizzo email"); return false;}
+    // verifico se è un indirizzo valido
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+    {
+       alert("L'indirizzo email che hai inserito e' valido")
+    }
+    else {
+       alert("L'indirizzo email che hai inserito non e' valido");
+    }
+    return false;
+}
+
+    </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
