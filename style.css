@@ -1,3 +1,38 @@
+ul.container {
+  overflow: hidden;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 960px;
+  margin: 20px auto 20px auto;
+}
+
+ul.container li {
+  display: none;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+ul.container .active {
+  display: block;
+}
+
+.button-container button {
+ color: #fff;
+ font-size: 14px;
+ padding: 8px 40px;
+ border: none;
+ background-color: #32863b;
+ margin: 0 3px;
+ border-radius: 5px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+
+
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 body{
    margin:0;
