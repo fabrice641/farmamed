@@ -31,50 +31,37 @@
 
         
         <!-- Navigation -->
-    <nav class="nav w-100 navbar bg-dark  text-white">
-
-      <!-- Container to wrapp the page -->
-      <div class="container">
-
-        <!-- Logo container (brand + hamburger) -->
-        <div class="navbar-brand txt-is-link">
-          <a class="navbar-item" style="font-size:1.5rem; padding-right:100px;" href="#">Farmamed</a>
-          <a role="button" class="navbar-burger burger">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+    
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">FARMAMED</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">HOME PAGE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servizi-medici.html">SERVIZI MEDICI</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
           </a>
-        </div>
-
-        <!-- Right navbar container -->
-        <div class="navbar-menu">
-
-          <!-- Left menu container (menu items) -->
-          <div class="navbar-start">
-            <ul class="navbar-item txt-is-link">
-              <li><a class="navbar-link" href="#">Chi Siamo</a></li>
-              <li><a class="navbar-link" href="#">Dove Siamo</a></li>
-              <li><a class="navbar-link has-dropdown" href="#">Servizi</a>
-                <ul class="navbar-dropdown">
-                  <li class="navbar-item">Lo studio Medico</li>
-                  <li class="navbar-item">I nostri trattamenti</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <!-- Left menu container END -->
-
-          <!-- Right menu container (Sign Up/Login) -->
-          
-          <!-- Right menu container END -->
-
-        </div>
-        <!-- Right navbar container END -->
-
-      </div>
-    </nav>
-
-
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="chi-siamo.html">CHI SIAMO</a></li>
+            <li><a class="dropdown-item" href="dove-siamo.html">DOVE SIAMO</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="contatti.html">CONTATTI</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
          
         
     <header class="header_section text-dark py-3 text-center" data-role="header">
