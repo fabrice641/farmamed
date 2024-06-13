@@ -285,6 +285,26 @@ onMounted(() => {
             wrap: true // Per far sì che il carousel continui a loopare
         });
     });
+
+$(document).ready(function(){
+  
+  var menuButton = $('.menu-button'),
+      mobileMenu = $('.mobile-menu');
+  
+  $(menuButton).click(function(){
+    
+    if( !$(this).hasClass('is-open') ) {
+      $(this).addClass('is-open');
+      $(mobileMenu).addClass('active'); 
+    } else {
+      $(this).removeClass('is-open');
+      $(mobileMenu).removeClass('active');
+    }
+    
+  });
+  
+});
+            
 </script>
 
     <!-- JavaScript -->
