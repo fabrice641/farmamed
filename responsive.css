@@ -1,3 +1,98 @@
+$menu-line-color: #fff;
+$menu-item-hover: #4f83b8;
+
+body{
+  background:#333;
+}
+
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+li{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+a{
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-button{
+  margin:25px;
+  display:block;
+  width:40px;
+  
+  .line{
+    width:100%;
+    height:2px;
+    margin:0 0 10px 0;
+    display:block;
+    background:$menu-line-color;
+    
+    &:last-child{
+      margin:0;
+    }
+  }
+}
+
+.mobile-menu{
+  position:fixed;
+  opacity:0;
+  top:50px;
+  z-index:-1;
+  left:50%;
+  width:300px;
+  margin-left:-150px;
+  height:auto;
+  background:white;
+  
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=27, Direction=135, Color=#000000)";/*IE 8*/
+  -moz-box-shadow: 2px 2px 27px -3px rgba(0,0,0,0.5);/*FF 3.5+*/
+  -webkit-box-shadow: 2px 2px 27px -3px rgba(0,0,0,0.5);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+  box-shadow: 2px 2px 27px -3px rgba(0,0,0,0.5);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=27, Direction=135, Color=#000000); /*IE 5.5-7*/
+  
+  ul li a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    color:black;
+    &:hover{
+      color:$menu-item-hover;
+    }
+  }
+  
+  &.active{
+    top:100px;
+    opacity:1;
+    z-index:9999;
+  }
+}
+
+.title-centered{
+  position:absolute;
+  top:30%;
+  left:50%;
+  width:600px;
+  height:auto;
+  margin-left:-300px;
+  color:white;
+  font-size:40px;
+}
+
+
 .navbar {
   overflow: hidden;
   background-color: red;
