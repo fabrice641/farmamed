@@ -9,9 +9,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="responvise.css" type="text/css">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,40 +22,54 @@
 
     <!-- jQuery Mobile CSS -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    
+
     <!-- Three.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
 
     <!-- Custom JS -->
     <script src="custom.js"></script>
-        <script src="jbul"></script>
-<link rel="stylesheet"href="bootstrap.css"type="text/css">
-
-    		<script type="module" src="/main.js"></script>
+    <script src="jbul"></script>
+    <script type="module" src="/main.js"></script>
 
     <!-- Shortcut icon -->
     <link rel="shortcut icon" href="medicina-estetica.png" type="image/png">
+
+    <!-- Custom CSS -->
+    <style>
+        /* Add any custom CSS here */
+        body {
+            background-color: #f0f0f0; /* Example background color */
+        }
+        /* Adjust styles as needed for your specific layout */
+    </style>
 </head>
 
-<body data-role="page" class="container-fluid border border-white w-100 h-100 text-white example text-dark container-fluid custom-select filter-expertise fixed slide-text">
+<body data-role="page"
+    class="container-fluid border border-white w-100 h-100 text-white example text-dark container-fluid custom-select filter-expertise fixed slide-text">
     <!-- Navigation -->
-    <nav data-role="navbar" class="navbar navbar-expand-lg border border-dark bg-white border-3 text-dark container-fluid custom-select filter-expertise fixed">
+    <nav data-role="navbar"
+        class="navbar navbar-expand-lg border border-dark bg-white border-3 text-dark container-fluid custom-select filter-expertise fixed">
         <div class="container-fluid">
             <h1 class="navbar-brand display-6 slide-text">FARMAMED</h1>
             <div class="container-fluid" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-white text-dark">
                     <li class="nav-item">
-                        <a data-ajax="false" class="nav-link btn btn-outline-dark" aria-current="page" href="index.html">HOME PAGE</a>
+                        <a data-ajax="false" class="nav-link btn btn-outline-dark" aria-current="page"
+                            href="index.html">HOME PAGE</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <select data-inline="true" class="nav-link bg-white text-dark border border-0" onchange="location = this.value;">
+                        <select data-inline="true"
+                            class="nav-link bg-white text-dark border border-0"
+                            onchange="location = this.value;">
                             <option value="" disabled selected>MEDICINA ESTETICA</option>
                             <option class="dropdown-item" value="servizi-medici.html">SERVIZI MEDICI</option>
                         </select>
                     </li>
                     <li class="nav-item dropdown">
-                        <select data-inline="true" class="nav-link bg-white text-dark border border-0" onchange="location = this.value;">
+                        <select data-inline="true"
+                            class="nav-link bg-white text-dark border border-0"
+                            onchange="location = this.value;">
                             <option value="" disabled selected>FARMAMED</option>
                             <option class="dropdown-item" value="chi-siamo.html">CHI SIAMO</option>
                             <option class="dropdown-item" value="dove-siamo.html">DOVE SIAMO</option>
@@ -90,11 +105,13 @@
                     <img src="medicina-estetica-medicina-estetica.png" class="d-block w-100 h-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -126,31 +143,257 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Team Member 1 -->
                 <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                    <img src="medicina-estetica-bari-2.png" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto">
+                    <img src="medicina-estetica-bari-2.png" alt="Team Member 1"
+                        class="w-32 h-32 rounded-full mx-auto">
                     <h3 class="text-lg font-semibold mt-4">Dott.ssa VITO</h3>
-                    <p class="text-gray-600">Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una novità in FARMAMED, da quest’anno.</p>
+                    <p class="text-gray-600">Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo
+                        lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una
+                        novità in FARMAMED, da quest’anno.</p>
                 </div>
                 <!-- Team Member 2 -->
                 <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                    <img src="medicina-estetica-4.png" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto">
+                    <img src="medicina-estetica-4.png" alt="Team Member 2"
+                        class="w-32 h-32 rounded-full mx-auto">
                     <h3 class="text-lg font-semibold mt-4">Dott.ssa JANE DOE</h3>
-                    <p class="text-gray-600">Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una novità in FARMAMED, da quest’anno.</p>
+                    <p class="text-gray-600">Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo
+                        lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una
+                        novità in FARMAMED, da quest’anno.</p>
                 </div>
                 <!-- Team Member 3 -->
                 <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                    <img src="medicina-estetica-medicina-estetica.png" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto">
-                    <h3 class="text-lg font-semibold mt-4">Dott. JOHN SMITH</h3>
-                    <p class="text-gray-600">Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una novità in FARMAMED, da quest’anno.</p>
-                </div>
-                <!-- Team Member 4 -->
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                    <img src="medicina-estetica.png" alt="Team Member 4" class="w-32 h-32 rounded-full mx-auto">
-                    <h3 class="text-lg font-semibold mt-4">Dott.ssa ANNA LEE</h3>
-                    <p class="text-gray-600">Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una novità in FARMAMED, da quest’anno.</p>
+                    <img src="medicina-estetica-medicina-estetica.png" alt="Team Member 3"
+                        class="w-32 h-32 rounded-full mx-auto">
+                    <h3 class="text-lg font-semibold mt-4">Dott. JOHN SMITH</h3
+                    <p class="text-gray-600">Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo
+                        lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una
+                        novità in FARMAMED, da quest’anno.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmamed</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="responvise.css" type="text/css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+    <!-- Shortcut icon -->
+    <link rel="shortcut icon" href="medicina-estetica.png" type="image/png">
+
+    <!-- Custom CSS -->
+    <style>
+        /* Add any custom CSS here */
+        body {
+            background-color: #f0f0f0; /* Example background color */
+        }
+        /* Adjust styles as needed for your specific layout */
+    </style>
+</head>
+
+<body data-role="page"
+    class="container-fluid border border-white w-100 h-100 text-white example text-dark container-fluid custom-select filter-expertise fixed slide-text">
+    <!-- Navigation -->
+    <nav data-role="navbar"
+        class="navbar navbar-expand-lg border border-dark bg-white border-3 text-dark container-fluid custom-select filter-expertise fixed">
+        <div class="container-fluid">
+            <h1 class="navbar-brand display-6 slide-text">FARMAMED</h1>
+            <div class="container-fluid" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-white text-dark">
+                    <li class="nav-item">
+                        <a data-ajax="false" class="nav-link btn btn-outline-dark" aria-current="page"
+                            href="index.html">HOME PAGE</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <select data-inline="true"
+                            class="nav-link bg-white text-dark border border-0"
+                            onchange="location = this.value;">
+                            <option value="" disabled selected>MEDICINA ESTETICA</option>
+                            <option class="dropdown-item" value="servizi-medici.html">SERVIZI MEDICI</option>
+                        </select>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <select data-inline="true"
+                            class="nav-link bg-white text-dark border border-0"
+                            onchange="location = this.value;">
+                            <option value="" disabled selected>FARMAMED</option>
+                            <option class="dropdown-item" value="chi-siamo.html">CHI SIAMO</option>
+                            <option class="dropdown-item" value="dove-siamo.html">DOVE SIAMO</option>
+                            <option class="dropdown-divider"></option>
+                            <option class="dropdown-item" value="contatti.html">CONTATTI</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header data-role="header" class="header_section text-dark py-3 text-center">
+        <div id="carouselExample" class="carousel slide mainContainer" data-bs-ride="carousel">
+            <div class="carousel-inner toBorder">
+                <div class="carousel-item active bottomBorder">
+                    <img id="carousel-image-0" src="medicina-estetica.png" class="d-block w-100 h-100"
+                        alt="Carousel Image">
+                </div>
+                <div class="carousel-item">
+                    <img id="carousel-image-1" src="medicina-estetica-2.jpg" class="d-block w-100 h-100"
+                        alt="Carousel Image">
+                </div>
+                <div class="carousel-item">
+                    <img id="carousel-image-2" src="medicina-estetica-3.jpg" class="d-block w-100 h-100"
+                        alt="Carousel Image">
+                </div>
+                <div class="carousel-item">
+                    <img id="carousel-image-3" src="medicina-estetica-4.jpg" class="d-block w-100 h-100"
+                        alt="Carousel Image">
+                </div>
+                <div class="carousel-item">
+                    <img id="carousel-image-4" src="medicina-estetica-bari-5.jpg" class="d-block w-100 h-100"
+                        alt="Carousel Image">
+                </div>
+                <div class="carousel-item">
+                    <img id="carousel-image-5" src="medicina-estetica-medicina-estetica.png" class="d-block w-100 h-100"
+                        alt="Carousel Image">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Three.js Container -->
+    <div id="three-container" class="container-fluid" style="height: 100vh;"></div>
+
+    <!-- Content Section -->
+    <section class="container-fluid bg-light p-3">
+        <div class="row">
+            <div class="col-md-7">
+                <strong align="justify">
+                    <!-- Your content here -->
+                </strong>
+            </div>
+            <div class="col-md-5">
+                <img src="medicina-estetica-bari.png" class="img-fluid border-0" alt="carousel image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonianze Section -->
+    <section id="our-team" class="bg-gray-100 border border-100 py-32 container-fluid">
+        <div class="container mx-auto px-4">
+            <h2 class="text-center">Testimonianze</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <img src="medicina-estetica-bari-2.png" alt="Team Member 1"
+                        class="w-32 h-32 rounded-full mx-auto">
+                    <h3 class="text-lg font-semibold mt-4">Dott.ssa VITO</h3>
+                    <p class="text-gray-600">Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo
+                        lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una
+                        novità in FARMAMED, da quest’anno.</p>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <img src="medicina-estetica-4.png" alt="Team Member 2"
+                        class="w-32 h-32 rounded-full mx-auto">
+                    <h3 class="text-lg font-semibold mt-4">Dott.ssa JANE DOE</h3>
+                    <p class="text-gray-600">Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo
+                        lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una
+                        novità in FARMAMED, da quest’anno.</p>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <img src="medicina-estetica-5.png" alt="Team Member 3"
+                        class="w-32 h-32 rounded-full mx-auto">
+                    <h3 class="text-lg font-semibold mt-4">Dott. MARIO ROSSI</h3>
+                    <p class="text-gray-600">Siamo lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo
+                                                lieti di annunciare una novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una
+                        novità in FARMAMED, da quest’anno. Siamo lieti di annunciare una novità in FARMAMED, da quest’anno.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Carousel -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Array of image paths
+            const images = [
+                'medicina-estetica.png',
+                'medicina-estetica-2.jpg',
+                'medicina-estetica-3.jpg',
+                'medicina-estetica-4.jpg',
+                'medicina-estetica-bari-5.jpg',
+                'medicina-estetica-medicina-estetica.png'
+            ];
+
+            // Index of currently displayed image
+            let currentIndex = 0;
+
+            // Function to show current image
+            function showImage() {
+                const carouselImage = document.getElementById('carousel-image-' + currentIndex);
+                carouselImage.parentElement.querySelectorAll('.carousel-item').forEach(item => item.classList.remove('active'));
+                carouselImage.parentElement.querySelector('.carousel-item:nth-child(' + (currentIndex + 1) + ')').classList.add('active');
+            }
+
+            // Function to go to next image
+            function nextImage() {
+                currentIndex = (currentIndex + 1) % images.length;
+                showImage();
+            }
+
+            // Function to go to previous image
+            function prevImage() {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                showImage();
+            }
+
+            // Show initial image
+            showImage();
+
+            // Add event listeners to carousel buttons
+            document.querySelector('[data-bs-slide="prev"]').addEventListener('click', prevImage);
+            document.querySelector('[data-bs-slide="next"]').addEventListener('click', nextImage);
+
+            // Auto-rotate carousel every 3 seconds
+            setInterval(nextImage, 3000);
+        });
+    </script>
+
+</body>
+
+</html>
+
+
 </body>
 
 </html>
