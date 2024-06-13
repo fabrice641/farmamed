@@ -1,3 +1,15 @@
+let elt = document.querySelectorAll('.slide-text > *')
+
+anime({
+  targets: elt,
+  translateX: '-100%',
+  duration: 12000,
+  easing: 'linear',
+  loop: true
+});
+
+
+
 // spanタグに分割
 let splitTarget = document.querySelectorAll('.js-splitText');//ターゲットとなる要素を全取得
 splitTarget.forEach((target) =>{
