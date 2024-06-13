@@ -39,33 +39,34 @@
 
 <body data-role="page" class="container-fluid bg-dark border border-300 border-white  w-100 h-100 text-white">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-dark text-white container-fluid">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">FARMAMED</a>
-            
-            <select class="nav-item collapse navbar-collapse" id="navbarSupportedContent">
-                    <option class="nav-item navbar-nav me-auto mb-2 mb-lg-0"">
-                        <a data-ajax="false"class="dropdown-item btn btn-outline-dark" aria-current="page" href="index.html">HOME PAGE</a>
-                    </option>
-            </select>
-                       <select class="nav-item collapse navbar-collapse" id="navbarSupportedContent"> TRATTAMENTI DI MEDICINA ESTETICA
-
-                    <option class="nav-item navbar-nav me-auto mb-2 mb-lg-0"">
-                        <a class="nav-link btn btn-outline-dark dropdown-item btn btn-outline-dark" href="servizi-medici.html" data-ajax="false">SERVIZI MEDICI</a>
-                    </option>
-                       </select>
-                  
-                        <select class="nav-item dropdown-menu collapse navbar-collapse">FARMAMED STUDI MEDICI
-                            <option class="dropdown-item btn btn-outline-dark" href="chi-siamo.html"><a data-ajax="false"class="dropdown-item btn btn-outline-dark">CHI SIAMO</a></option>
-                            <option><a data-ajax="false"class="dropdown-item btn btn-outline-dark" href="dove-siamo.html">DOVE SIAMO</a></option>
-                            <option><hr class="dropdown-divider"></li>
-                            <option><a data-ajax="false"class="dropdown-item btn btn-outline-dark" href="contatti.html">CONTATTI</a></option>
-                        </select>
-      
-                </select>
-            </div>
+ <nav class="navbar navbar-expand-lg bg-dark text-white container-fluid">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">FARMAMED</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a data-ajax="false" class="nav-link btn btn-outline-dark" aria-current="page" href="index.html">HOME PAGE</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <select class="nav-link btn btn-outline-dark" onchange="location = this.value;">
+                        <option value="" disabled selected>TRATTAMENTI DI MEDICINA ESTETICA</option>
+                        <option class="dropdown-item" value="servizi-medici.html">SERVIZI MEDICI</option>
+                    </select>
+                </li>
+                <li class="nav-item dropdown">
+                    <select class="nav-link btn btn-outline-dark" onchange="location = this.value;">
+                        <option value="" disabled selected>FARMAMED STUDI MEDICI</option>
+                        <option class="dropdown-item" value="chi-siamo.html">CHI SIAMO</option>
+                        <option class="dropdown-item" value="dove-siamo.html">DOVE SIAMO</option>
+                        <option class="dropdown-divider"></option>
+                        <option class="dropdown-item" value="contatti.html">CONTATTI</option>
+                    </select>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <!-- Header -->
     <header data-role="header" class="header_section text-dark py-3 text-center">
