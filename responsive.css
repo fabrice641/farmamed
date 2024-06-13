@@ -10,7 +10,40 @@ p, div {
 
 
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  
+  font-family: Helvetica, sans-serif;
+}
+
+.slide-text {
+  width: 100%;
+  background-color: #ccff00;
+  padding: 1.2em 0;
+  
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap; /* important */
+  border-top: 3px solid #23271B;  
+  border-bottom: 3px solid #23271B;
+}
+
+h1, span {
+  display: inline-block;
+  font-size: 3.5em;
+  font-weight: normal;
+  /* width: 100%; */
+}
 
 
 
