@@ -28,12 +28,9 @@
     <!-- Nav END --
 
    <!-- Header -->
-    <header class="header_section text-dark py-3 text-center" data-role="header">
 
         
         <!-- Navigation -->
-
-        <section class="navigation">
     <nav class="navbar bg-is-dark txt-is-white">
 
       <!-- Container to wrapp the page -->
@@ -83,14 +80,11 @@
 
       </div>
     </nav>
-</section>
 
-<article>
-  
-</article>
+
          
         
-    </header>
+    <header class="header_section text-dark py-3 text-center" data-role="header">
 
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -124,15 +118,9 @@
     </button>
 </div>
 
-<script>
-    $(document).ready(function() {
-        // Attiva l'autoplay del carousel
-        $('.carousel').carousel({
-            interval: 1000, // Tempo in millisecondi tra le slide
-            wrap: true // Per far sì che il carousel continui a loopare
-        });
-    });
-</script>
+    </header>
+        
+
 
     <!-- Content Section -->
     <section class="container-fluid bg-light p-3">
@@ -299,7 +287,14 @@ onMounted(() => {
   }); // end DOM ready
 })(jQuery); // end jQuery
 
-            
+
+    $(document).ready(function() {
+        // Attiva l'autoplay del carousel
+        $('.carousel').carousel({
+            interval: 1000, // Tempo in millisecondi tra le slide
+            wrap: true // Per far sì che il carousel continui a loopare
+        });
+    });
 </script>
 
     <!-- JavaScript -->
