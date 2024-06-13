@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="medicina-estetica.png" type="image/png">
 </head>
 
-<body data-role="page" class="container-fluid bg-dark border border-300 border-white  w-100 h-100 text-white">
+<body data-role="page" class="container-fluid bg-dark border border-300 border-white  w-100 h-100 text-white example">
     <!-- Navigation -->
 	
    
@@ -424,6 +424,34 @@ component.customSelect.prototype.selectOption = function () {
 
 
 var select = new component.customSelect('.custom-select');
+
+
+		$.fn.liveBorder = function(options){
+    var settings = $.extend({}, {top: false, right: false, bottom: true, left: false}, options);
+    var border = $("<div>").addClass("live-border");
+
+    if(settings.top)
+        border.append($("<div>", {class: "border top"}).append($("<div>", {class: "bar"})));
+    if(settings.right)
+        border.append($("<div>", {class: "border right"}).append($("<div>", {class: "bar"})));
+    if(settings.bottom)
+        border.append($("<div>", {class: "border bottom"}).append($("<div>", {class: "bar"})));
+    if(settings.left)
+        border.append($("<div>", {class: "border left"}).append($("<div>", {class: "bar"})));
+        
+    border.insertAfter($(this));
+    $(this).detach().appendTo(border);
+}
+
+$(function(){
+  $("#id-btn1").liveBorder();
+  $("#id-btn2").liveBorder({
+    top: true, 
+    right: true, 
+    bottom: true, 
+    left: true
+  });
+});
             
 </script>
 
