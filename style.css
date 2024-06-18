@@ -1,0 +1,18 @@
+/* Custom CSS for additional styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#hero {
+    background: url('hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
